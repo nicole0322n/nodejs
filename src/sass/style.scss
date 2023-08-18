@@ -1,0 +1,21 @@
+//變數 : sass的註解不會出現在css
+/* CSS 註解*/
+
+//型態
+$fontSize : 30px; //數值
+$bgcolor : #eee; //color
+$list : 10px 20px; //list
+$map : (key : 'value',
+    large : 50px,
+    medium : 40px,
+    small : 20px);
+
+body {
+    background-color: $bgcolor;
+    color: #333;
+}
+
+h1 {
+    font-size: $fontSize;
+    font-size: map-get($map, small);
+}
